@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>400 Planos de Aula Prontos para Professor de Dança — Forró, Funk, Sertanejo, Piseiro, Samba, Bachata, Hip Hop e K-Pop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --preto: #0a0a0a;
+    --laranja: #FF5C00;
+    --laranja-claro: #FF8C42;
+    --creme: #F5F0E8;
+    --branco: #FFFFFF;
+    --cinza: #1a1a1a;
+    --cinza-med: #2e2e2e;
+    --texto-escuro: #111111;
+    --verde-ok: #2ECC71;
+    --fonte-display: 'Bebas Neue', sans-serif;
+    --fonte-corpo: 'DM Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--fonte-corpo); background: var(--preto); color: var(--branco); overflow-x: hidden; }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: var(--preto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 24px 140px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(255,92,0,0.14) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 120px;
+    background: linear-gradient(to bottom right, var(--preto) 50%, var(--creme) 50%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* H1 — bloco único, tudo junto, mesmo tamanho */
+  .hero-bloco {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.7s 0.1s forwards;
+  }
+  .hero-bloco h1 {
+    font-family: var(--fonte-display);
+    font-size: clamp(46px, 7.8vw, 104px);
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--branco);
+  }
+  .hero-bloco h1 em {
+    font-style: normal;
+    color: var(--laranja);
+  }
+
+  /* Tags de público */
+  .para-quem {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 28px;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.6s 0.4s forwards;
+  }
+  .para-quem span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #666;
+    border: 1px solid #222;
+    padding: 6px 14px;
+    background: rgba(255,255,255,0.02);
+    white-space: nowrap;
+  }
+
+  /* Sub */
+  .hero-sub {
+    margin-top: 24px;
+    font-size: 17px;
+    line-height: 1.65;
+    color: #888;
+    max-width: 560px;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.6s 0.55s forwards;
+  }
+
+  /* CTA hero */
+  .hero-cta-wrap {
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.6s 0.68s forwards;
+  }
+
+  /* Contador */
+  .horas-perdidas {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 44px;
+    padding: 20px 24px;
+    background: var(--cinza);
+    border-left: 4px solid var(--laranja);
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.6s 0.8s forwards;
+  }
+  .horas-num {
+    font-family: var(--fonte-display);
+    font-size: 60px;
+    color: var(--laranja);
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .horas-label { font-size: 14px; color: #777; line-height: 1.55; }
+  .horas-label strong { color: var(--branco); display: block; font-size: 15px; margin-bottom: 4px; }
+
+  /* ─── SEÇÕES ─── */
+  .secao-creme {
+    background: var(--creme);
+    color: var(--texto-escuro);
+    padding: 100px 24px;
+    position: relative;
+  }
+  .secao-creme::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 100px;
+    background: linear-gradient(to bottom right, var(--creme) 50%, var(--cinza) 50%);
+  }
+  .secao-escura {
+    background: var(--cinza);
+    padding: 120px 24px 100px;
+    position: relative;
+  }
+  .secao-escura::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 100px;
+    background: linear-gradient(to bottom left, var(--cinza) 50%, var(--preto) 50%);
+  }
+  .secao-preta {
+    background: var(--preto);
+    padding: 120px 24px;
+    position: relative;
+  }
+  .secao-preta::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 100px;
+    background: linear-gradient(to bottom right, var(--preto) 50%, var(--laranja) 50%);
+  }
+  .secao-laranja {
+    background: var(--laranja);
+    padding: 100px 24px 120px;
+    position: relative;
+  }
+  .secao-laranja::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 100px;
+    background: linear-gradient(to bottom left, var(--laranja) 50%, var(--creme) 50%);
+  }
+  .secao-garantia {
+    background: var(--creme);
+    color: var(--texto-escuro);
+    padding: 120px 24px;
+    position: relative;
+  }
+  .secao-garantia::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 100px;
+    background: linear-gradient(to bottom right, var(--creme) 50%, var(--preto) 50%);
+  }
+  .secao-oferta {
+    background: var(--preto);
+    padding: 120px 24px 100px;
+  }
+
+  .container { max-width: 960px; margin: 0 auto; }
+
+  .secao-titulo {
+    font-family: var(--fonte-display);
+    font-size: clamp(36px, 6vw, 72px);
+    text-transform: uppercase;
+    line-height: 0.95;
+    margin-bottom: 48px;
+  }
+  .secao-titulo .acento { color: var(--laranja); }
+
+  /* ─── CARDS DOR ─── */
+  .cards-dor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 40px;
+  }
+  .card-dor {
+    background: var(--branco);
+    padding: 28px 24px;
+    border-radius: 2px;
+    border-top: 3px solid transparent;
+    transition: border-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-dor:hover { border-color: var(--laranja); transform: translateY(-4px); }
+  .card-dor::before {
+    content: '"';
+    font-family: var(--fonte-display);
+    font-size: 120px;
+    color: rgba(255,92,0,0.06);
+    position: absolute;
+    top: -20px; right: 10px;
+    line-height: 1;
+  }
+  .card-dor p { font-size: 15px; line-height: 1.65; color: #444; font-style: italic; }
+  .card-dor .quem { margin-top: 16px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--laranja); }
+
+  /* ─── PRODUTO ─── */
+  .label-flutuante {
+    font-family: var(--fonte-display);
+    font-size: 140px;
+    color: rgba(255,92,0,0.04);
+    position: absolute;
+    top: 10px; right: -20px;
+    line-height: 1;
+    user-select: none;
+    letter-spacing: 0.02em;
+  }
+  .produto-titulo {
+    font-family: var(--fonte-display);
+    font-size: clamp(40px, 7vw, 88px);
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .produto-titulo span { color: var(--laranja); }
+  .produto-desc { font-size: 17px; line-height: 1.7; color: #888; max-width: 620px; margin-bottom: 56px; }
+
+  /* Grid de ritmos — 4 colunas desktop, 2 tablet, 1 mobile */
+  .ritmos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+  @media (max-width: 900px) { .ritmos-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .ritmos-grid { grid-template-columns: 1fr; } }
+
+  .ritmo-card {
+    background: var(--cinza-med);
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+    cursor: default;
+  }
+  .ritmo-card:hover { background: #333; }
+  .ritmo-card::after { display: none; }
+  .ritmo-nome { font-family: var(--fonte-display); font-size: 26px; color: var(--laranja); letter-spacing: 0.03em; }
+  .ritmo-count { margin-top: 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #555; text-transform: uppercase; }
+  .ritmo-detalhe { margin-top: 10px; font-size: 12px; color: #777; line-height: 1.6; }
+
+  /* ─── CONTEÚDO ─── */
+  .conteudo-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (max-width: 700px) { .conteudo-wrap { grid-template-columns: 1fr; } }
+
+  .conteudo-intro h2 {
+    font-family: var(--fonte-display);
+    font-size: clamp(36px, 5vw, 64px);
+    text-transform: uppercase;
+    line-height: 0.95;
+    margin-bottom: 20px;
+  }
+  .conteudo-intro p { font-size: 16px; color: #888; line-height: 1.7; }
+
+  .checklist { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .checklist li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.55;
+    padding: 16px 18px;
+    background: #111;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+  .checklist li:hover { background: #181818; }
+  .check-icon {
+    width: 22px; height: 22px; min-width: 22px;
+    background: var(--laranja); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; color: var(--branco); font-weight: 700; margin-top: 1px;
+  }
+
+  /* ─── BÔNUS ─── */
+  .bonus-titulo {
+    font-family: var(--fonte-display);
+    font-size: clamp(42px, 7vw, 88px);
+    text-transform: uppercase;
+    line-height: 0.9;
+    color: var(--preto);
+    margin-bottom: 56px;
+  }
+  .bonus-titulo small {
+    display: block;
+    font-family: var(--fonte-corpo);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.4);
+    margin-bottom: 8px;
+  }
+  .bonus-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .bonus-card { background: var(--preto); padding: 36px 32px; position: relative; overflow: hidden; }
+  .bonus-num {
+    font-family: var(--fonte-display);
+    font-size: 80px;
+    color: rgba(255,92,0,0.1);
+    position: absolute;
+    top: -10px; right: 16px;
+    line-height: 1;
+  }
+  .bonus-badge {
+    display: inline-block;
+    background: var(--laranja);
+    color: var(--branco);
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 4px 12px; margin-bottom: 16px;
+  }
+  .bonus-nome { font-family: var(--fonte-display); font-size: 26px; letter-spacing: 0.02em; line-height: 1.1; margin-bottom: 14px; }
+  .bonus-desc { font-size: 14px; color: #888; line-height: 1.7; }
+  .bonus-valor { margin-top: 20px; font-size: 13px; color: #555; }
+  .bonus-valor strong { color: var(--verde-ok); font-size: 15px; }
+
+  /* ─── GARANTIA ─── */
+  .garantia-inner { display: flex; gap: 56px; align-items: center; flex-wrap: wrap; }
+  .garantia-icone {
+    width: 140px; height: 140px; min-width: 140px;
+    background: var(--preto); border-radius: 50%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+  }
+  .garantia-icone .g-num { font-family: var(--fonte-display); font-size: 48px; line-height: 1; color: var(--laranja); }
+  .garantia-icone .g-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #888; }
+  .garantia-texto h2 { font-family: var(--fonte-display); font-size: clamp(32px, 5vw, 60px); text-transform: uppercase; line-height: 0.95; margin-bottom: 16px; }
+  .garantia-texto p { font-size: 16px; line-height: 1.7; color: #555; max-width: 480px; }
+
+  /* ─── OFERTA ─── */
+  .oferta-box {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #111;
+    border: 1px solid #222;
+    padding: 56px 48px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  @media (max-width: 600px) { .oferta-box { padding: 40px 20px; } }
+  .oferta-box::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--laranja); }
+  .oferta-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--laranja); margin-bottom: 32px; }
+  .oferta-titulo { font-family: var(--fonte-display); font-size: clamp(32px, 6vw, 64px); text-transform: uppercase; line-height: 0.95; margin-bottom: 40px; }
+
+  .oferta-lista { list-style: none; text-align: left; margin-bottom: 40px; display: flex; flex-direction: column; gap: 0; }
+  .oferta-lista li {
+    font-size: 14px; color: #bbb;
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 11px 0;
+    border-bottom: 1px solid #1e1e1e;
+  }
+  .oferta-lista li:last-child { border-bottom: none; }
+  .oferta-lista .tick { color: var(--verde-ok); font-size: 15px; min-width: 18px; margin-top: 1px; }
+
+  .preco-principal { margin: 28px 0; }
+  .preco-de { font-size: 13px; color: #555; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
+  .preco-num { font-family: var(--fonte-display); font-size: clamp(56px, 10vw, 100px); color: var(--laranja); line-height: 1; }
+  .preco-num sup { font-size: 0.4em; vertical-align: top; margin-top: 12px; color: var(--laranja-claro); }
+  .preco-nota { font-size: 13px; color: #555; margin-top: 8px; }
+
+  /* ─── CTA ─── */
+  .btn-cta {
+    display: inline-block;
+    background: var(--laranja);
+    color: var(--branco);
+    font-family: var(--fonte-corpo);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 20px 48px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn-cta:hover { background: var(--laranja-claro); transform: translateY(-2px); }
+  .btn-cta.grande { font-size: 18px; padding: 24px 56px; width: 100%; text-align: center; }
+
+  .seguro-badge {
+    margin-top: 16px; font-size: 12px; color: #444;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+
+  /* ─── FOOTER ─── */
+  footer { background: #060606; padding: 40px 24px; text-align: center; font-size: 12px; color: #333; border-top: 1px solid #111; }
+
+
+
+  /* ─── ANIMAÇÕES ─── */
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 600px) {
+    .hero { padding: 60px 20px 100px; }
+    .secao-creme, .secao-escura, .secao-preta, .secao-laranja, .secao-garantia, .secao-oferta { padding-top: 80px; padding-bottom: 80px; }
+    .garantia-inner { flex-direction: column; }
+    .label-flutuante { font-size: 80px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════ HERO ════ -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <!-- Bloco unificado: eyebrow + h1 mesmo peso visual -->
+    <div class="hero-bloco">
+      <h1>400 planos de aula prontos para professor de dança<br><em>Aula pronta. Você só ensina.</em></h1>
+    </div>
+
+    <!-- Para quem -->
+    <div class="para-quem">
+      <span>Professor autônomo</span>
+      <span>Personal dance</span>
+      <span>Dono de estúdio</span>
+      <span>Professor de academia</span>
+    </div>
+
+    <!-- Sub -->
+    <p class="hero-sub">
+      Planos de aula prontos em PDF — só baixar e usar — com progressão por nível para os 8 ritmos mais ensinados do Brasil: forró, samba, sertanejo e muito mais. Chega de improvisar — você entra na sala com tudo estruturado.
+    </p>
+
+    <div class="hero-cta-wrap">
+      <a href="#oferta" class="btn-cta">Quero meus planos de aula →</a>
+    </div>
+
+    <div class="horas-perdidas">
+      <div class="horas-num">6h+</div>
+      <div class="horas-label">
+        <strong>perdidas toda semana criando aula do zero</strong>
+        Com 400 planos prontos, você economiza isso tudo — e ainda entra na sala com muito mais qualidade.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ QUEM É VOCÊ ════ -->
+<section class="secao-creme">
+  <div class="container">
+    <h2 class="secao-titulo reveal">
+      Se você se vê<br>
+      <span class="acento">aqui embaixo,</span><br>
+      esse kit é seu.
+    </h2>
+    <div class="cards-dor">
+      <div class="card-dor reveal">
+        <p>"Cada aula que vou montar eu fico olhando pra tela em branco. Não sei por onde começar com iniciante."</p>
+        <div class="quem">▸ Professor autônomo</div>
+      </div>
+      <div class="card-dor reveal" style="transition-delay:0.1s">
+        <p>"Meus alunos ficam na mesma aula por semanas porque eu não tenho uma progressão clara pra seguir."</p>
+        <div class="quem">▸ Dono de estúdio de dança</div>
+      </div>
+      <div class="card-dor reveal" style="transition-delay:0.2s">
+        <p>"Trabalho com vários ritmos na mesma semana. Criar plano diferente pra cada um me consome demais."</p>
+        <div class="quem">▸ Personal dance</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ O QUE É ════ -->
+<section class="secao-escura">
+  <div class="container" style="position:relative">
+    <div class="label-flutuante">400</div>
+
+    <p style="opacity:1;color:var(--laranja);font-size:11px;letter-spacing:0.2em;font-weight:700;text-transform:uppercase;margin-bottom:20px">O produto</p>
+
+    <h2 class="produto-titulo reveal">
+      Kit Aulas<br>
+      <span>Prontas</span><br>
+      de Dança
+    </h2>
+
+    <p class="produto-desc reveal">
+      400 planos de aula digitais — 50 por ritmo — com objetivo, aquecimento, sequência de passos, progressão por nível e fechamento. Você abre, imprime ou joga no celular e entra na sala pra ensinar. Sem adaptação, sem improviso.
+    </p>
+
+    <div class="ritmos-grid reveal">
+      <div class="ritmo-card" data-icon="🪗">
+        <div class="ritmo-nome">Forró</div>
+        <div class="ritmo-count">50 aulas prontas</div>
+        <div class="ritmo-detalhe">Pé de serra, universitário e xote. Do básico ao giro, progressão mapeada aula por aula.</div>
+      </div>
+      <div class="ritmo-card" data-icon="🎤">
+        <div class="ritmo-nome">Funk</div>
+        <div class="ritmo-count">50 aulas prontas</div>
+        <div class="ritmo-detalhe">Passinho, quadradinho e batidão. Para grupos, individual ou aula de academia.</div>
+      </div>
+      <div class="ritmo-card" data-icon="🤠">
+        <div class="ritmo-nome">Sertanejo</div>
+        <div class="ritmo-count">50 aulas prontas</div>
+        <div class="ritmo-detalhe">Universitário, arrastapé e dois-a-dois. Os planos que funcionam em qualquer espaço.</div>
+      </div>
+      <div class="ritmo-card" data-icon="👟">
+        <div class="ritmo-nome">Piseiro</div>
+        <div class="ritmo-count">50 aulas prontas</div>
+        <div class="ritmo-detalhe">O ritmo das festas brasileiras. Marcação, passos e coreografia de grupo do básico ao avançado.</div>
+      </div>
+      <div class="ritmo-card" data-icon="🥁">
+        <div class="ritmo-nome">Samba</div>
+        <div class="ritmo-count">50 aulas prontas</div>
+        <div class="ritmo-detalhe">Samba no pé, pagode e samba rock. Progressão para ensinar o ritmo mais brasileiro de todos.</div>
+      </div>
+      <div class="ritmo-card" data-icon="🌹">
+        <div class="ritmo-nome">Bachata</div>
+        <div class="ritmo-count">50 aulas prontas</div>
+        <div class="ritmo-detalhe">Hoje rivaliza com o forró nas academias brasileiras. Planos do básico ao sensual para a dois.</div>
+      </div>
+      <div class="ritmo-card" data-icon="🧢">
+        <div class="ritmo-nome">Hip Hop</div>
+        <div class="ritmo-count">50 aulas prontas</div>
+        <div class="ritmo-detalhe">Street dance, popping e breaking. Progressão para turmas de urbano em academias e estúdios.</div>
+      </div>
+      <div class="ritmo-card" data-icon="⭐">
+        <div class="ritmo-nome">K-Pop</div>
+        <div class="ritmo-count">50 aulas prontas</div>
+        <div class="ritmo-detalhe">Febre nos estúdios do Brasil inteiro. Planos de coreografia sincronizada por nível.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ CONTEÚDO ════ -->
+<section class="secao-preta">
+  <div class="container">
+    <div class="conteudo-wrap">
+      <div class="conteudo-intro reveal">
+        <h2>O que vem<br><span style="color:var(--laranja)">dentro do kit</span></h2>
+        <p style="margin-top:16px;font-size:16px;color:#777;line-height:1.7">
+          Tudo o que você precisa para dar uma aula completa — estrutura, linguagem didática, sugestão de música e tempo estimado por bloco.
+        </p>
+      </div>
+      <ul class="checklist reveal" style="transition-delay:0.15s">
+        <li><span class="check-icon">✓</span><span><strong style="color:#fff">400 planos de aula prontos</strong> — 50 por ritmo, 8 estilos BR</span></li>
+        <li><span class="check-icon">✓</span><span><strong style="color:#fff">Progressão por nível</strong> — iniciante, básico e intermediário mapeados</span></li>
+        <li><span class="check-icon">✓</span><span><strong style="color:#fff">Descrição de cada passo</strong> com linguagem que o aluno entende</span></li>
+        <li><span class="check-icon">✓</span><span><strong style="color:#fff">Sugestão de músicas</strong> por aula, com BPM e clima adequado</span></li>
+        <li><span class="check-icon">✓</span><span><strong style="color:#fff">Tempo estimado por bloco</strong> — aquecimento, núcleo e fechamento</span></li>
+        <li><span class="check-icon">✓</span><span><strong style="color:#fff">Formato PDF + editável</strong> — imprime ou abre no celular durante a aula</span></li>
+        <li><span class="check-icon">✓</span><span><strong style="color:#fff">Acesso imediato</strong> após a compra, sem espera</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ BÔNUS ════ -->
+<section class="secao-laranja">
+  <div class="container">
+    <h2 class="bonus-titulo reveal">
+      <small>Bônus exclusivos</small>
+      Você ainda<br>leva de graça
+    </h2>
+    <div class="bonus-cards">
+      <div class="bonus-card reveal">
+        <span class="bonus-num">01</span>
+        <div class="bonus-badge">Bônus #1</div>
+        <div class="bonus-nome">BANCO DE MÚSICAS<br>POR RITMO E NÍVEL</div>
+        <p class="bonus-desc">Curadoria de 80+ músicas organizadas por ritmo, BPM e nível de aluno. Chega de perder tempo escolhendo música antes da aula — só filtrar e tocar. Inclui sugestões de playlists no Spotify com link direto para cada estilo.</p>
+        <div class="bonus-valor">Valor: <strong>grátis no kit</strong></div>
+      </div>
+      <div class="bonus-card reveal" style="transition-delay:0.12s">
+        <span class="bonus-num">02</span>
+        <div class="bonus-badge">Bônus #2</div>
+        <div class="bonus-nome">FICHA DE EVOLUÇÃO<br>DO ALUNO</div>
+        <p class="bonus-desc">Template de ficha de acompanhamento individual — você registra o nível atual de cada aluno, os passos dominados e o próximo objetivo. Funciona para turma ou aula particular. PDF editável e versão para imprimir e preencher à mão.</p>
+        <div class="bonus-valor">Valor: <strong>grátis no kit</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ GARANTIA ════ -->
+<section class="secao-garantia">
+  <div class="container">
+    <div class="garantia-inner">
+      <div class="garantia-icone reveal">
+        <div class="g-num">7</div>
+        <div class="g-label">dias</div>
+      </div>
+      <div class="garantia-texto reveal" style="transition-delay:0.1s">
+        <h2>Garantia<br>total de<br><span style="color:var(--laranja)">7 dias</span></h2>
+        <p>Baixou, abriu e não era o que esperava? Você manda um e-mail e devolvo cada centavo — sem perguntas, sem burocracia. A decisão de compra é totalmente sua, e o risco é zero.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ OFERTA ════ -->
+<section class="secao-oferta" id="oferta">
+  <div class="container">
+    <div class="oferta-box reveal">
+      <div class="oferta-eyebrow">Oferta completa — acesso imediato</div>
+      <h2 class="oferta-titulo">Tudo que você<br>leva hoje</h2>
+      <ul class="oferta-lista">
+        <li><span class="tick">✔</span><span><strong style="color:#fff">400 planos de aula prontos</strong> — 50 de forró, funk, sertanejo, piseiro, samba, bachata, hip hop e k-pop</span></li>
+        <li><span class="tick">✔</span> Progressão por nível em cada ritmo (iniciante → intermediário)</li>
+        <li><span class="tick">✔</span> Descrição de passos com linguagem que o aluno entende</li>
+        <li><span class="tick">✔</span> Tempo por bloco (aquecimento, núcleo, fechamento) em cada aula</li>
+        <li><span class="tick">✔</span> Sugestão de música por aula com BPM e clima adequado</li>
+        <li><span class="tick">✔</span> PDF pronto para imprimir ou abrir no celular durante a aula</li>
+        <li><span class="tick">✔</span><span><strong style="color:#fff">BÔNUS #1:</strong> Banco de 80+ músicas curadas por ritmo e nível</span></li>
+        <li><span class="tick">✔</span><span><strong style="color:#fff">BÔNUS #2:</strong> Ficha de evolução individual do aluno</span></li>
+        <li><span class="tick">✔</span> Acesso imediato após a compra</li>
+        <li><span class="tick">✔</span> Garantia de 7 dias sem questionamentos</li>
+      </ul>
+      <div class="preco-principal">
+        <div class="preco-de">Por apenas</div>
+        <div class="preco-num"><sup>R$</sup>27<sup>,90</sup></div>
+        <div class="preco-nota">pagamento único · acesso vitalício</div>
+      </div>
+      <a href="https://pay.cakto.com.br/7496ph5_1040542" class="btn-cta grande">Quero meus planos de aula agora →</a>
+      <div class="seguro-badge">🔒 Compra 100% segura · Garantia de 7 dias · Acesso imediato</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <p>© 2025 · Kit Aulas Prontas de Dança · Todos os direitos reservados</p>
+  <p style="margin-top:8px">Garantia de 7 dias conforme o Código de Defesa do Consumidor (Art. 49)</p>
+</footer>
+
+
+
+
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+
+
+
+  document.querySelectorAll('a[href="#oferta"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('oferta').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
